@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FrontierSite Intelligence is building AI-assisted geospatial risk intelligence for investment and infrastructure projects across Africa.">
+  <meta name="theme-color" content="#0b1224">
+  <meta property="og:title" content="FrontierSite Intelligence | Project-Level Risk Intelligence">
+  <meta property="og:description" content="Understand the local risks shaping investment and infrastructure projects across Africa.">
+  <meta property="og:type" content="website">
+  <title>FrontierSite Intelligence — Project-Level Risk Intelligence</title>
+  <style>
+    :root{--ink:#15223a;--navy:#0b1224;--muted:#53657c;--line:#dce4ee;--paper:#f7f9fc;--white:#fff;--accent:#0f766e;--blue:#2563eb;--max:1100px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper)}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid #5eead4;outline-offset:4px}.skip{position:absolute;top:-50px;left:10px;background:#fff;padding:6px 12px;z-index:40}.skip:focus{top:10px}.container{max-width:var(--max);padding:0 28px;margin:0 auto}
+    .site-header{background:var(--navy);color:#fff;border-bottom:1px solid rgba(255,255,255,.13)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:780;letter-spacing:-.03em;font-size:1.17rem;display:flex;align-items:center;gap:12px}.mark{width:27px;height:27px;display:grid;place-items:center;border:2px solid #5eead4;transform:rotate(-9deg);border-radius:7px;color:#5eead4;font-weight:800}.nav-links{display:flex;gap:27px;color:#ccd7e8;font-size:.9rem}.nav-links a:hover{color:#fff}
+    .hero{background:radial-gradient(circle at 78% 17%,rgba(13,148,136,.16),transparent 33%),radial-gradient(circle at 10% 90%,rgba(37,99,235,.2),transparent 40%),var(--navy);color:#fff;padding:96px 0 102px;overflow:hidden}.hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:65px;align-items:center}.eyebrow{font-weight:750;letter-spacing:.13em;font-size:.75rem;text-transform:uppercase;color:#81e6d8;margin-bottom:24px}.hero h1{font-size:clamp(2.7rem,5.5vw,4.7rem);letter-spacing:-.058em;line-height:1.08;margin:0 0 28px;font-weight:800}.hero h1 span{color:#83ddd1}.hero p{max-width:650px;font-size:1.12rem;color:#c5d1e4;margin:0 0 34px;line-height:1.75}.actions{display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-block;background:#6ee7d2;color:#082224;border:1px solid #6ee7d2;border-radius:10px;padding:12px 20px;font-weight:750;transition:transform .2s}.button:hover{transform:translateY(-2px)}.button-outline{color:#f7fbff;background:transparent;border-color:#64748b}.button-outline:hover{border-color:#fff}
+    .visual{border:1px solid #36445e;background:rgba(24,38,62,.8);border-radius:20px;padding:22px;box-shadow:0 20px 85px rgba(0,0,0,.3);position:relative}.visual-top{display:flex;align-items:center;justify-content:space-between;color:#c5d1e4;font-size:.8rem;border-bottom:1px solid #37465e;padding-bottom:14px;margin-bottom:15px}.signal{width:8px;height:8px;background:#5eead4;display:inline-block;border-radius:50%;margin-right:7px}.visual svg{width:100%;height:auto;display:block}.visual-note{font-size:.73rem;color:#91a7bd;margin-top:14px}.section{padding:87px 0}.section-white{background:white}.overline{color:var(--accent);text-transform:uppercase;font-weight:760;letter-spacing:.12em;font-size:.76rem;margin:0 0 13px}.section h2{font-size:clamp(2rem,3vw,2.75rem);letter-spacing:-.045em;line-height:1.19;margin:0 0 18px}.lead{color:var(--muted);max-width:760px;font-size:1.08rem;margin:0 0 32px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{border:1px solid var(--line);background:#fff;border-radius:16px;padding:27px;box-shadow:0 8px 20px rgba(16,40,70,.03)}.card h3{font-size:1.17rem;letter-spacing:-.02em;margin:8px 0}.card p{margin:0;color:var(--muted);font-size:.97rem}.status{display:inline-block;font-size:.7rem;font-weight:750;letter-spacing:.06em;text-transform:uppercase;color:#0b6d66;background:#dcf6f0;border-radius:100px;padding:4px 9px}.status.planned{color:#334155;background:#e7ecf3}.number{color:#0d9488;font-size:.81rem;font-weight:780}.two-col{display:grid;grid-template-columns:.9fr 1.1fr;gap:75px}.checks{margin:0;padding:0;list-style:none}.checks li{padding:19px 0;border-bottom:1px solid var(--line);color:#40516b}.checks strong{color:var(--ink);display:block;margin-bottom:3px}.fine{font-size:.85rem;color:var(--muted)}
+    .callout{background:var(--navy);color:white;border-radius:23px;padding:44px;display:flex;align-items:center;justify-content:space-between;gap:30px}.callout h2{font-size:2rem;margin:0 0 10px}.callout p{color:#c2cfdf;margin:0;max-width:680px}.footer{background:#0b1224;color:#8fa2bd;padding:32px 0;font-size:.83rem}.footer-inner{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}.footer strong{color:#fff}.footer a{text-decoration:underline;text-underline-offset:4px}
+    @media(max-width:820px){.nav-links{gap:14px}.hero{padding:70px 0}.hero-inner,.two-col{grid-template-columns:1fr;gap:35px}.visual{max-width:560px}.section{padding:62px 0}.callout{display:block}.callout .button{margin-top:22px}}@media(max-width:550px){.container{padding:0 19px}.nav{min-height:66px}.nav-links a:nth-child(2){display:none}.brand{font-size:1.04rem}.hero h1{font-size:2.65rem}.cards{grid-template-columns:1fr}.callout{padding:27px}.section h2{font-size:2rem}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="FrontierSite Intelligence home"><span class="mark" aria-hidden="true">F</span> FrontierSite Intelligence</a>
+      <div class="nav-links"><a href="#platform">Platform</a><a href="#approach">Approach</a><a href="#contact">Connect</a></div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div>
+          <div class="eyebrow">Africa · Geospatial Intelligence · Early Stage</div>
+          <h1 id="hero-title">Understand the risks <span>beneath the map.</span></h1>
+          <p>AI-assisted, project-level intelligence for organizations investing in, financing, and delivering infrastructure across Africa. Bringing together local governance, environmental exposure, and publicly available evidence to support better decisions.</p>
+          <div class="actions"><a class="button" href="#platform">Explore our direction</a><a class="button button-outline" href="#contact">Work with us</a></div>
+        </div>
+        <div class="visual" aria-label="Illustrative visualization of layered site intelligence; not real project data" role="img">
+          <div class="visual-top"><span>PROJECT-LEVEL INTELLIGENCE</span><span><i class="signal"></i>Concept</span></div>
+          <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M 28 0 L 0 0 0 28" fill="none" stroke="#40526b" stroke-width=".6"/></pattern><linearGradient id="mapg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0d9488" stop-opacity=".2"/><stop offset="1" stop-color="#2563eb" stop-opacity=".1"/></linearGradient></defs>
+            <rect width="400" height="320" rx="8" fill="url(#grid)"/>
+            <path d="M22 244 66 212 101 224 159 176 200 192 256 105 302 123 368 58" fill="none" stroke="#7eb7d3" stroke-width="2.5" stroke-dasharray="7 7"/>
+            <path d="M53 74 145 44 205 86 180 163 102 183 38 133Z" fill="url(#mapg)" stroke="#60a5fa" stroke-width="1.5"/>
+            <path d="M222 168 316 145 371 203 339 279 247 264 210 212Z" fill="url(#mapg)" stroke="#5eead4" stroke-width="1.5"/>
+            <circle cx="159" cy="176" r="29" fill="#14b8a6" opacity=".13"/><circle cx="159" cy="176" r="10" fill="#5eead4"/><circle cx="159" cy="176" r="4" fill="#0b1224"/>
+            <circle cx="302" cy="123" r="24" fill="#60a5fa" opacity=".14"/><circle cx="302" cy="123" r="8" fill="#93c5fd"/>
+            <g font-size="10" font-family="system-ui,sans-serif" fill="#e0f2fe"><rect x="163" y="135" width="112" height="25" rx="5" fill="#182d46" stroke="#365875"/><text x="171" y="151">Site context</text><rect x="237" y="87" width="128" height="25" rx="5" fill="#182d46" stroke="#365875"/><text x="247" y="103">Event monitoring</text><rect x="244" y="236" width="117" height="25" rx="5" fill="#182d46" stroke="#365875"/><text x="253" y="252">Spatial evidence</text></g>
+          </svg>
+          <div class="visual-note">Illustrative concept only. No live operational data shown.</div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-white" id="platform">
+      <div class="container">
+        <p class="overline">Our product direction</p><h2>Intelligence built around the project site.</h2>
+        <p class="lead">Decisions about a specific investment require more than a country-level score. Our proposed workspace connects location-specific evidence with governance and implementation context.</p>
+        <div class="cards">
+          <article class="card"><span class="number">01 / DUE DILIGENCE</span><h3>SiteScan</h3><p>Bring together site boundaries, land and community considerations, climate exposures, and local governance context into traceable due-diligence outputs.</p></article>
+          <article class="card"><span class="number">02 / CONTINUOUS AWARENESS</span><h3>Monitor</h3><p>Track relevant publicly reported events, environmental hazards, and policy developments in and around a project area.</p></article>
+          <article class="card"><span class="number">03 / INSTITUTIONAL CONTEXT</span><h3>Governance Friction <span class="status planned">Planned</span></h3><p>Examine regulatory implementation, administrative coordination, land governance, and stakeholder dynamics that can affect delivery.</p></article>
+          <article class="card"><span class="number">04 / MULTI-ASSET VIEW</span><h3>Portfolio Intelligence <span class="status planned">Planned</span></h3><p>Compare risks and monitoring signals across projects and locations within a unified portfolio workspace.</p></article>
+        </div>
+        <p class="fine" style="margin-top:18px">Products are under development; descriptions reflect our intended roadmap rather than commercially deployed capabilities.</p>
+      </div>
+    </section>
+    <section class="section" id="approach">
+      <div class="container two-col">
+        <div><p class="overline">How we think</p><h2>Grounded in evidence. Designed for decisions.</h2><p class="lead">We combine computational social science, political and institutional analysis, and geospatial methods to help organizations investigate what could affect their projects on the ground.</p></div>
+        <ul class="checks"><li><strong>Geospatial context</strong>Site footprints, infrastructure corridors, environmental exposures, and location-specific signals.</li><li><strong>Political and governance context</strong>Local institutions, regulatory implementation, land governance, and project delivery conditions.</li><li><strong>Traceability and uncertainty</strong>Documented data sources, timestamps, geographical precision, and transparent limitations.</li><li><strong>Responsible AI</strong>AI-assisted synthesis with human review of consequential assessments and respect for data licensing and privacy.</li></ul>
+      </div>
+    </section>
+    <section class="section section-white" id="focus"><div class="container"><p class="overline">Where we're starting</p><h2>Focused first on Kenya and East Africa.</h2><p class="lead">Our initial customer discovery and product validation focus on energy and infrastructure project teams, investors, and development finance organizations operating in the region. We are prioritizing one clear, high-value decision workflow before expanding geographically or into additional use cases.</p><p class="fine">Status: early-stage venture · customer discovery and product development</p></div></section>
+    <section class="section" id="contact"><div class="container"><div class="callout"><div><p class="overline" style="color:#83ddd1">Collaborate</p><h2>Let's build better project intelligence.</h2><p>We are interested in conversations with potential design partners, infrastructure and investment teams, geospatial engineers, and prospective collaborators.</p></div><a class="button" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub to find FrontierSite Intelligence organization">Find us on GitHub</a></div><p class="fine" style="margin:14px 0 0">Replace the GitHub button URL with your organization's exact profile URL before publishing.</p></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span><strong>FrontierSite Intelligence</strong> · Project-level risk intelligence for Africa</span><span>© <span id="year">2026</span> FrontierSite Intelligence. Early-stage venture.</span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
